@@ -7,12 +7,12 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Config::INI::Reader::Ordered -- .ini-file parser that returns sections in order
 Name:		perl-Config-INI-Reader-Ordered
-Version:	0.011
+Version:	0.020
 Release:	1
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Config/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	641951a00fae8cfde55cbba878c76938
+# Source0-md5:	d93fc080b21f57c1ec00f6bc428dff0b
 URL:		https://metacpan.org/pod/Config::INI::Reader::Ordered
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
