@@ -4,7 +4,6 @@
 #
 %define		pdir	Config
 %define		pnam	INI-Reader-Ordered
-%include	/usr/lib/rpm/macros.perl
 Summary:	Config::INI::Reader::Ordered -- .ini-file parser that returns sections in order
 Name:		perl-Config-INI-Reader-Ordered
 Version:	0.020
