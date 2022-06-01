@@ -4,27 +4,33 @@
 #
 %define		pdir	Config
 %define		pnam	INI-Reader-Ordered
-Summary:	Config::INI::Reader::Ordered -- .ini-file parser that returns sections in order
+Summary:	Config::INI::Reader::Ordered - .ini-file parser that returns sections in order
+Summary(pl.UTF-8):	Config::INI::Reader::Ordered - parser plików .ini zwracający sekcje w kolejności
 Name:		perl-Config-INI-Reader-Ordered
-Version:	0.020
+Version:	0.021
 Release:	1
-License:	unknown
+# same as perl 5
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Config/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d93fc080b21f57c1ec00f6bc428dff0b
-URL:		https://metacpan.org/pod/Config::INI::Reader::Ordered
+# Source0-md5:	06e914f650aa271f2f2635225e340599
+URL:		https://metacpan.org/dist/Config-INI-Reader-Ordered
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
-BuildRequires:	perl(Config::INI::Reader)
+BuildRequires:	perl-Config-INI
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Config::INI::Reader::Ordered is a subclass of Config::INI::Reader
-which preserves section order.  See Config::INI::Reader for all
-documentation; the only difference is as presented in the /SYNOPSIS.
+which preserves section order.
+
+%description -l pl.UTF-8
+Config::INI::Reader::Ordered to podklasa Config::INI::Reader,
+zachowująca kolejność sekcji.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -50,4 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %dir %{perl_vendorlib}/Config/INI/Reader
 %{perl_vendorlib}/Config/INI/Reader/Ordered.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/Config::INI::Reader::Ordered.3pm*
