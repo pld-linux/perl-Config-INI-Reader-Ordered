@@ -7,13 +7,13 @@
 Summary:	Config::INI::Reader::Ordered - .ini-file parser that returns sections in order
 Summary(pl.UTF-8):	Config::INI::Reader::Ordered - parser plików .ini zwracający sekcje w kolejności
 Name:		perl-Config-INI-Reader-Ordered
-Version:	0.021
+Version:	0.022
 Release:	1
 # same as perl 5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Config/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	06e914f650aa271f2f2635225e340599
+Source0:	https://www.cpan.org/modules/by-module/Config/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	d0f595f053ee1ab7474ca1f429f966df
 URL:		https://metacpan.org/dist/Config-INI-Reader-Ordered
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
